@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+body {
+    background-color: #141519;
+    font-size: 15px;
+    color:white;
+    font-family: 'Overpass', sans-serif;
+    cursor: pointer;
+}
+
+p{
+    line-height: 1.5;
+    color: #818793;
+}
+
+.hidden{
+    display:none;
+}
+
+.container {
+    width:23%;
+    background: radial-gradient(circle at top, #242833, #171e28);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    padding:30px;
+    border-radius: 30px;    
+}
+
+.thanks {
+    text-align: center;
+}
+
+.rating-area{
+    display:flex;
+    justify-content: space-between;
+}
+
+.rating-area span.active {
+    background-color: #7c8898;
+    color: #fff;
+}
+
+.rating-area span{
+    width: 50px;
+    height: 50px;
+    background-color: #272e38;
+    border-radius: 30px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: #79828b;
+}
+
+.rating-area span:hover {
+    background-color: #fc7d16;
+    color: #fff;
+}
+
+
+
+.icon-star {
+    padding:15px;
+    background-color: #272e38;
+    border-radius: 50px;
+}
+
+.button{
+    width: 100%;
+    background-color: #fc7d16;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #fff;
+    margin: 30px 0 0 0;
+    padding: 10px; 
+    font-family: 'Overpass', sans-serif;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: #fff;
+    color:#fc7d16
+}
+
+.itemSel p{
+    color: #fc7d16;
+    background-color:#273039;
+    border-radius: 20px;
+    width: 55%;
+    padding: 7px;
+    margin: 0 auto;
+}
+
+.itemSel {
+    margin:25px 0;
+}
+
+@media (max-width: 1200px){
+    .container {
+        width:30%;
+    }
+}
+
+@media (max-width: 1024px){
+    .container {
+        width:45%;
+    }
+}
+
+@media (max-width: 768px){
+    .container {
+        width:60%;
+        font-size: 0.9rem;
+    }
+    .itemSel p {
+        width:60%;
+    }
+}
+
+@media (max-width: 420px){
+    .container {
+        width:75%;
+        font-size: 0.9rem;
+    }
+
+    .itemSel p {
+        width:60%;
+    }
+}
